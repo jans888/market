@@ -1,0 +1,82 @@
+p.title-information {
+  font-style: normal;
+  font-family: "Metropolis SemiBold";
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 28px;
+  color: #222222;
+  margin-top: 60px;
+}
+
+p.condition-prod {
+  font-style: normal;
+  font-family: "Metropolis SemiBold";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  color: #222222;
+  margin-top: 40px;
+}
+
+p.condition-value {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Metropolis Bold";
+  font-size: 20px;
+  line-height: 20px;
+  color: #db3022;
+}
+
+p.description-title {
+  font-style: normal;
+  font-family: "Metropolis SemiBold";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  color: #222222;
+  margin-top: 40px;
+}
+
+p.description-prod {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Metropolis Medium";
+  font-size: 14px;
+  line-height: 24px;
+  color: #9b9b9b;
+}
+
+p.review-title {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "Metropolis SemiBold";
+  font-size: 28px;
+  line-height: 28px;
+  color: #222222;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+p.rating-value {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Metropolis Medium";
+  font-size: 60px;
+  line-height: 60px;
+  color: #222222;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.star {
+  cursor: pointer;
+  transition: color 200ms;
+  margin-top: -15px;
+}
+
+div.line-width {
+  border: 1px solid #d4d4d4;
+  margin-top: 60px;
+}
