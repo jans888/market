@@ -9,7 +9,7 @@ import { login } from "../../configs/redux/actions/user";
 
 import "./style.css";
 
-import Tuku from "../../components/images/logo.png";
+import Logo from "../../components/images/logo.png";
 
 export default function Login() {
   const history = useHistory();
@@ -73,7 +73,7 @@ export default function Login() {
   return (
     <div className="showInAnimation">
       <Helmet>
-        <title>Tuku - Login</title>
+        <title>Marketplace - Login</title>
       </Helmet>
       <section className="login">
         <div className="container">
@@ -81,10 +81,10 @@ export default function Login() {
             <div className="col-12 d-flex flex-column justify-content-center align-items-center">
               <div className="text-center">
                 <img
-                  src={Tuku}
-                  width={135}
-                  height={50}
-                  alt="Tuku"
+                  src={Logo}
+                  width={235}
+                  height={150}
+                  alt="Logo"
                   onClick={() => handleClickLogo()}
                   style={{ cursor: "pointer" }}
                 />
@@ -160,7 +160,7 @@ export default function Login() {
                 </button>
               </form>
               <p className="mt-4">
-                Don't have a Tokopedia account?{" "}
+                Don't have an account?{" "}
                 <Link to="/register">Register</Link>
               </p>
             </div>

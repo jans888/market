@@ -136,13 +136,13 @@ export default function MyProducts({ smpmd, smpmm }) {
 
   const handleClickDelete = (id) => {
     Swal.fire({
-      title: "Apakah kamu yakin?",
-      text: "Kamu tidak akan dapat mengembalikan ini!",
+      title: "Are you sure?",
+      text: "You won't be able to return this!",
       icon: "question",
       showCancelButton: true,
-      confirmButtonText: "Ya, hapus!",
+      confirmButtonText: "Yes, delete!",
       confirmButtonColor: "#db3022",
-      cancelButtonText: "Tidak, batalkan!",
+      cancelButtonText: "No, cancel!",
       cancelButtonColor: "#1EC15F",
       reverseButtons: true,
     }).then((result) => {
@@ -152,8 +152,8 @@ export default function MyProducts({ smpmd, smpmm }) {
           .then((res) => {
             Swal.fire({
               icon: "success",
-              title: "Berhasil!",
-              text: "Produk berhasil dihapus",
+              title: "Succeed!",
+              text: "Product deleted successfully",
               confirmButtonColor: "#273ac7",
             }).then(() => {
               axiosApiInstance
@@ -177,8 +177,8 @@ export default function MyProducts({ smpmd, smpmm }) {
           });
       } else if (result.dismiss === Swal.DismissReason.cancel) {
         Swal.fire({
-          title: "Dibatalkan!",
-          text: "Produk kamu aman :)",
+          title: "Canceled!",
+          text: "Your product is safe :)",
           icon: "info",
           confirmButtonColor: "#273ac7",
         });
@@ -188,13 +188,13 @@ export default function MyProducts({ smpmd, smpmm }) {
 
   const handleClickArchive = (id) => {
     Swal.fire({
-      title: "Apakah kamu yakin?",
-      text: "Produk kamu akan diarsipkan!",
+      title: "Are you sure?",
+      text: "Your product will be archived!",
       icon: "question",
       showCancelButton: true,
-      confirmButtonText: "Ya, arsipkan!",
+      confirmButtonText: "Yes, archive!",
       confirmButtonColor: "#db3022",
-      cancelButtonText: "Tidak, batalkan!",
+      cancelButtonText: "No, cancel!",
       cancelButtonColor: "#1EC15F",
       reverseButtons: true,
     }).then((result) => {
@@ -204,8 +204,8 @@ export default function MyProducts({ smpmd, smpmm }) {
           .then((res) => {
             Swal.fire({
               icon: "success",
-              title: "Berhasil!",
-              text: "Produk berhasil diarsipkan",
+              title: "Succeed!",
+              text: "Product successfully archived",
               confirmButtonColor: "#273ac7",
             }).then(() => {
               axiosApiInstance
@@ -220,7 +220,7 @@ export default function MyProducts({ smpmd, smpmm }) {
             });
           })
           .catch((err) => {
-            if (err.response.data.message === "Produk telah diarsipkan") {
+            if (err.response.data.message === "The product has been archived") {
               Swal.fire({
                 title: "Info!",
                 text: err.response.data.message,
@@ -238,8 +238,8 @@ export default function MyProducts({ smpmd, smpmm }) {
           });
       } else if (result.dismiss === Swal.DismissReason.cancel) {
         Swal.fire({
-          title: "Dibatalkan!",
-          text: "Produk batal diarsipkan :)",
+          title: "Canceled!",
+          text: "Unarchived product :)",
           icon: "info",
           confirmButtonColor: "#273ac7",
         });
@@ -249,13 +249,13 @@ export default function MyProducts({ smpmd, smpmm }) {
 
   const handleClickUnarchive = (id) => {
     Swal.fire({
-      title: "Apakah kamu yakin?",
-      text: "Produk kamu akan dibatalkan dari pengarsipan!",
+      title: "Are you sure?",
+      text: "Your product will be removed from the archive!",
       icon: "question",
       showCancelButton: true,
-      confirmButtonText: "Ya, arsipkan!",
+      confirmButtonText: "Yes, archive!",
       confirmButtonColor: "#db3022",
-      cancelButtonText: "Tidak, batalkan!",
+      cancelButtonText: "No, cancel!",
       cancelButtonColor: "#1EC15F",
       reverseButtons: true,
     }).then((result) => {
@@ -265,8 +265,8 @@ export default function MyProducts({ smpmd, smpmm }) {
           .then((res) => {
             Swal.fire({
               icon: "success",
-              title: "Berhasil!",
-              text: "Pembatalan pengarsipan produk berhasil",
+              title: "Succeed!",
+              text: "Product unarchive was successful",
               confirmButtonColor: "#273ac7",
             }).then(() => {
               axiosApiInstance
@@ -290,8 +290,8 @@ export default function MyProducts({ smpmd, smpmm }) {
           });
       } else if (result.dismiss === Swal.DismissReason.cancel) {
         Swal.fire({
-          title: "Dibatalkan!",
-          text: "Produk masih berada di pengarsipan :)",
+          title: "Canceled!",
+          text: "The product is still in the archive :)",
           icon: "info",
           confirmButtonColor: "#273ac7",
         });
@@ -585,9 +585,7 @@ export default function MyProducts({ smpmd, smpmm }) {
       <div
         className="modal fade"
         id="exampleModal"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
+        aria-labelledby="exampleModalLabel" >
         <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content">
             <div className="modal-header">

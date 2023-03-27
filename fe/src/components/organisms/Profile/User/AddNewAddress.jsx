@@ -26,7 +26,7 @@ export default function AddNewAddress({
         if (res) {
           Swal.fire({
             icon: "success",
-            title: "Berhasil!",
+            title: "Succeed!",
             text: "Navigates to the profile page",
             confirmButtonColor: "#273ac7",
           }).then(() => {

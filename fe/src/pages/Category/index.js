@@ -10,7 +10,7 @@ import axiosApiInstance from "../../helpers/axios.js";
 
 export default function CategoryPage(props) {
   const { params } = useParams();
-  const [category, setCategory] = useState();
+  const [setCategory] = useState();
   useEffect(() => {
     axiosApiInstance
       .get(`${process.env.REACT_APP_API_URL}/category`)
@@ -25,11 +25,12 @@ export default function CategoryPage(props) {
           confirmButtonColor: "#273ac7",
         });
       });
+      // eslint-disable-next-line
   }, []);
   return (
     <div className="showInAnimation">
       <Helmet>
-        <title>Tuku - Home</title>
+        <title>Marketplace - Home</title>
       </Helmet>
       {/* Ini nanti di panggil dari category, Untuk navigasi bebas mau pake state atau route */}
       <Category param={params} />

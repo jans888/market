@@ -6,7 +6,7 @@ export default function ConfirmPassword() {
     <div className="inDevelopment">
       <div className="showInAnimation">
         <Helmet>
-          <title>Tuku - Confirm Password</title>
+          <title>Marketplace - Confirm Password</title>
         </Helmet>
         <div className="displayColumn inDevelopment">
           <h1>Confirm Password - In Development</h1>

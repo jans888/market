@@ -47,8 +47,8 @@ export default function ShoppingSum({ total, address, cart }) {
         .then((res) => {
           Swal.fire({
             icon: "success",
-            title: "Berhasil",
-            text: "Checkout berhasil!",
+            title: "Succeed",
+            text: "Checkout succeed!",
             confirmButtonColor: "#273ac7",
           }).then(() => {
             Swal.fire({

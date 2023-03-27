@@ -6,7 +6,7 @@ export default function MyBagPage() {
   return (
     <div className="showInAnimation">
       <Helmet>
-        <title>Tuku - My Bag</title>
+        <title>Marketplace - My Bag</title>
       </Helmet>
       <div className="displayColumn inDevelopment">
         {/* <h1>My Bag - In Development</h1> */}

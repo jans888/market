@@ -165,7 +165,7 @@ export default function SellingProducts({
       formData.append("title", data.title);
       formData.append("idCategory", category);
       formData.append("price", data.price);
-      formData.append("conditions", cp === true ? "Baru" : "Bekas");
+      formData.append("conditions", cp === true ? "New" : "Used");
       formData.append("stock", data.stock);
       formData.append("size", JSON.stringify(selectedSize));
       formData.append("color", JSON.stringify(selectedColor));
@@ -216,7 +216,7 @@ export default function SellingProducts({
             cls={css.sellingProductsInput}
             nm="title"
             onCg={handleFormChange}
-            plcHldr="Masukkan nama barang"
+            plcHldr="type the text"
             type="text"
           />
         </div>
@@ -423,7 +423,7 @@ export default function SellingProducts({
                     style={cp === true ? { background: "#273AC7" } : null}
                   />
                 </div>
-                <span className={css.myProfileGender}>Baru</span>
+                <span className={css.myProfileGender}>New</span>
               </div>
               <div className="displayRow">
                 <div
@@ -437,7 +437,7 @@ export default function SellingProducts({
                     style={cp === false ? { background: "#273AC7" } : null}
                   />
                 </div>
-                <span className={css.myProfileGender}>Bekas</span>
+                <span className={css.myProfileGender}>Used</span>
               </div>
             </div>
           </div>
@@ -492,7 +492,7 @@ export default function SellingProducts({
                 src={dummyPhotoArray[4]}
               />
             </div>
-            <span className={css.fotoUtama}>Foto utama</span>
+            <span className={css.fotoUtama}>Main photo</span>
             {/* <div className={css.uploadBtnArea}>
               <Button
                 btnClr="white"
@@ -535,7 +535,7 @@ export default function SellingProducts({
               />
             </div>
             {photo === 0 ? (
-              <span className={css.fotoUtama}>Foto utama</span>
+              <span className={css.fotoUtama}>Main photo</span>
             ) : null}
             {/* <Button
               btnClr="white"

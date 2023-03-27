@@ -61,12 +61,15 @@ function PopularHome() {
   };
   useEffect(() => {
     axiosGet();
+    // eslint-disable-next-line
   }, []);
   useEffect(() => {
     pgNum();
+    // eslint-disable-next-line
   }, [rating]);
   useEffect(() => {
     axiosGet();
+    // eslint-disable-next-line
   }, [currentPage]);
 
   return (

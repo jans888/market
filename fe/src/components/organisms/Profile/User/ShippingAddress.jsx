@@ -15,8 +15,8 @@ export default function ShippingAddress({ func }) {
       })
       .then((res) => {
         Swal.fire({
-          title: "Berhasil",
-          text: "Alamat utama berhasil diubah",
+          title: "Succeed",
+          text: "The main address has been changed successfully",
           icon: "success",
           confirmButtonText: "Ok",
           confirmButtonColor: "#273ac7",
@@ -50,13 +50,13 @@ export default function ShippingAddress({ func }) {
 
   const handleDeleteAddress = (id) => {
     Swal.fire({
-      title: "Apakah kamu yakin?",
-      text: "Kamu tidak akan dapat mengembalikan ini!",
+      title: "Are you sure?",
+      text: "You won't be able to return this!",
       icon: "question",
       showCancelButton: true,
-      confirmButtonText: "Ya, hapus!",
+      confirmButtonText: "Yes, delete!",
       confirmButtonColor: "#db3022",
-      cancelButtonText: "Tidak, batalkan!",
+      cancelButtonText: "No, cancel!",
       cancelButtonColor: "#1EC15F",
       reverseButtons: true,
     }).then((result) => {
@@ -66,8 +66,8 @@ export default function ShippingAddress({ func }) {
           .then((res) => {
             Swal.fire({
               icon: "success",
-              title: "Berhasil",
-              text: "Alamat berhasil dihapus",
+              title: "Succeed",
+              text: "Address deleted successfully",
               confirmButtonColor: "#273ac7",
             }).then(() => {
               axiosApiInstance
@@ -96,8 +96,8 @@ export default function ShippingAddress({ func }) {
           });
       } else if (result.dismiss === Swal.DismissReason.cancel) {
         Swal.fire({
-          title: "Dibatalkan!",
-          text: "Alamat kamu aman :)",
+          title: "Canceled!",
+          text: "Your address is safe:)",
           icon: "info",
           confirmButtonColor: "#273ac7",
         });
@@ -116,7 +116,7 @@ export default function ShippingAddress({ func }) {
         Swal.fire({
           icon: "error",
           title: "Error!",
-          text: "Alamat belum ditambahkan!",
+          text: "Address not added!",
           confirmButtonColor: "#273ac7",
         });
       });

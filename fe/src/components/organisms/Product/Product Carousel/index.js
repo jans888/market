@@ -226,8 +226,8 @@ function Index({ product }) {
         .then((result) => {
           Swal.fire({
             icon: "success",
-            title: "Berhasil",
-            text: `Mengarahkan ke halaman checkout`,
+            title: "Succeed",
+            text: `Redirects to the checkout page`,
             confirmButtonColor: "#273ac7",
           }).then(() => {
             history.push("/check-out");

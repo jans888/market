@@ -81,8 +81,8 @@ export default function HeadAddress({ funcAddress }) {
           formik.resetForm();
           setPrimary(false);
           Swal.fire({
-            title: "Berhasil",
-            text: "Alamat berhasil ditambahkan",
+            title: "Succeed",
+            text: "Address added successfully",
             icon: "success",
             confirmButtonText: "Ok",
             confirmButtonColor: "#273ac7",
@@ -110,8 +110,8 @@ export default function HeadAddress({ funcAddress }) {
       .then((res) => {
         formik.resetForm();
         Swal.fire({
-          title: "Berhasil",
-          text: "Alamat utama berhasil diupdate",
+          title: "Succeed",
+          text: "The main address was successfully updated",
           icon: "success",
           confirmButtonText: "Ok",
           confirmButtonColor: "#273ac7",
@@ -131,13 +131,14 @@ export default function HeadAddress({ funcAddress }) {
         });
       });
   };
-
   useEffect(() => {
     getOneAddress();
+    // eslint-disable-next-line
   }, []);
 
   useEffect(() => {
     getAllAdress();
+    // eslint-disable-next-line
   }, []);
 
   return (
@@ -179,9 +180,7 @@ export default function HeadAddress({ funcAddress }) {
       <div
         className="modal fade"
         id="exampleModal"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
+        aria-labelledby="exampleModalLabel" >
         <div className="modal-dialog modal-lg modal-dialog-centered">
           <div className="modal-content px-2">
             <div className="modal-header pb-1">

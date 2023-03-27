@@ -10,14 +10,14 @@ import Default from "../../components/images/PhotoOfGoods.png";
 
 export default function ProfilePage() {
   // SET-UP STATE
-  const [storeData, setStoreData] = useState(null);
+  const [storeData] = useState(null);
   const [storeImage, setStoreImage] = useState(null);
   const [imgProduct1, setImgProduct1] = useState(null);
   const [imgProduct2, setImgProduct2] = useState(null);
   const [imgProduct3, setImgProduct3] = useState(null);
   const [imgProduct4, setImgProduct4] = useState(null);
   const [imgProduct5, setImgProduct5] = useState(null);
-  const [imageStore, setImageStore] = useState(null);
+  const [imageStore] = useState(null);
   const [userData, setUserData] = useState({ name: "Anonymous" });
   const [menuSelected, selectMenu] = useState(null);
   const [myOrderUserSelected, selectMyOrderUser] = useState("All items");
@@ -109,8 +109,8 @@ export default function ProfilePage() {
       .catch((err) => {
         Swal.fire({
           icon: "error",
-          title: "Batal",
-          text: "Penambahan gambar produk dibatalkan",
+          title: "Cancelled",
+          text: "Photo uploading was cancelled",
           confirmButtonColor: "#273ac7",
         });
       });
@@ -158,8 +158,8 @@ export default function ProfilePage() {
       .catch((err) => {
         Swal.fire({
           icon: "error",
-          title: "Batal",
-          text: "Perubahan gambar profil dibatalkan!",
+          title: "Cancelled",
+          text: "Profile picture change canceled!",
           confirmButtonColor: "#273ac7",
         });
       });
@@ -195,7 +195,7 @@ export default function ProfilePage() {
   return (
     <div className="showInAnimation">
       <Helmet>
-        <title>Tuku - Profile</title>
+        <title>Marketplace - Profile</title>
       </Helmet>
       <Profile
         ms={menuSelected}

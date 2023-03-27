@@ -35,7 +35,7 @@ export default function StoreProfile({ cau, au, ud, sd, status, storeImage }) {
       .then((res) => {
         Swal.fire({
           title: "Success!",
-          text: "Toko berhasil diubah",
+          text: "Store successfully modified",
           icon: "success",
           confirmButtonText: "Ok",
           confirmButtonColor: "#273ac7",

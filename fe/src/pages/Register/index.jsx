@@ -9,7 +9,7 @@ import { signUp, verify } from "../../configs/redux/actions/user";
 
 import "./style.css";
 
-import Tuku from "../../components/images/logo.png";
+import Logo from "../../components/images/logo.png";
 
 export default function Register() {
   const useQuery = () => new URLSearchParams(useLocation().search);
@@ -66,8 +66,8 @@ export default function Register() {
         .then((res) => {
           formik.resetForm();
           Swal.fire({
-            title: "Berhasil",
-            text: "Akun kamu telah dibuat, silahkan periksa email kamu untuk mengaktifkan akun kamu",
+            title: "Succeed",
+            text: "Your account has been created, please check your email to activate your account",
             icon: "success",
             confirmButtonText: "Ok",
             confirmButtonColor: "#273ac7",
@@ -100,8 +100,8 @@ export default function Register() {
       dispatch(verify(email, token))
         .then((res) => {
           Swal.fire({
-            title: "Berhasil",
-            text: "Akun kamu telah diaktifkan, silahkan masuk.",
+            title: "Succeed",
+            text: "Your account has been activated, please login.",
             icon: "success",
             confirmButtonText: "Ok",
             confirmButtonColor: "#273ac7",
@@ -128,7 +128,7 @@ export default function Register() {
   return (
     <div className="showInAnimation">
       <Helmet>
-        <title>Tuku - Register</title>
+        <title>Marketplace - Register</title>
       </Helmet>
       <section className="register">
         <div className="container">
@@ -136,10 +136,10 @@ export default function Register() {
             <div className="col-12 d-flex flex-column justify-content-center align-items-center">
               <div className="text-center">
                 <img
-                  src={Tuku}
-                  width={135}
-                  height={50}
-                  alt="Tuku"
+                  src={Logo}
+                  width={235}
+                  height={150}
+                  alt="Logo"
                   onClick={() => handleClickLogo()}
                   style={{ cursor: "pointer" }}
                 />
@@ -262,7 +262,7 @@ export default function Register() {
                 </button>
               </form>
               <p className="mt-4">
-                Already have a Tokopedia account? <Link to="/login">Login</Link>
+                Already have an account? <Link to="/login">Login</Link>
               </p>
             </div>
           </div>

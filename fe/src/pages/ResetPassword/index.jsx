@@ -9,7 +9,7 @@ import { activate, reset } from "../../configs/redux/actions/user";
 
 import "./style.css";
 
-import Tuku from "../../components/images/logo.png";
+import Logo from "../../components/images/logo.png";
 
 export default function Reset() {
   const useQuery = () => new URLSearchParams(useLocation().search);
@@ -55,8 +55,8 @@ export default function Reset() {
         .then((res) => {
           formik.resetForm();
           Swal.fire({
-            title: "Berhasil",
-            text: "Kata sandi telah diubah! Silahkan masuk.",
+            title: "Succeed",
+            text: "Password has been changed! Please come in.",
             icon: "success",
             confirmButtonText: "Ok",
             confirmButtonColor: "#273ac7",
@@ -86,8 +86,8 @@ export default function Reset() {
           formik.resetForm();
           setStatus(true);
           Swal.fire({
-            title: "Berhasil",
-            text: "Silahkan periksa email kamu untuk mengatur ulang kata sandi kamu!",
+            title: "Succeed",
+            text: "Please check your email to reset your password!",
             icon: "success",
             confirmButtonText: "Ok",
             confirmButtonColor: "#273ac7",
@@ -130,7 +130,7 @@ export default function Reset() {
   return (
     <div className="showInAnimation">
       <Helmet>
-        <title>Tuku - Reset Password</title>
+        <title>Marketplace - Reset Password</title>
       </Helmet>
       <section className="reset">
         <div className="container">
@@ -138,10 +138,10 @@ export default function Reset() {
             <div className="col-12 d-flex flex-column justify-content-center align-items-center">
               <div className="text-center">
                 <img
-                  src={Tuku}
-                  width={135}
-                  height={50}
-                  alt="Tuku"
+                  src={Logo}
+                  width={235}
+                  height={150}
+                  alt="Logo"
                   onClick={() => handleClickLogo()}
                   style={{ cursor: "pointer" }}
                 />
@@ -235,7 +235,7 @@ export default function Reset() {
               </form>
               {!showPassword && (
                 <p className="mt-4">
-                  Don't have a Tokopedia account?{" "}
+                  Don't have an account?{" "}
                   <Link to="/register">Register</Link>
                 </p>
               )}

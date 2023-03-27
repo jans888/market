@@ -404,7 +404,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `phoneNumber`, `gender`, `dateOfBirth`, `image`, `active`, `role`, `createdAt`, `updatedAt`) VALUES
 (17, 'Name1 Surname1', 'js25222225+1@gmail.com', '$2b$10$wU9Th0qxrk/f38QaTqK6HORgFd05TFtFMf23g0OIIUZ1SiEj0YTgu', '087827865437', 'Man', '10 Juli 2000', 'images\\default.png', 1, 1, '2021-05-06 05:57:17', '2021-05-09 13:00:11'),
-(21, 'Name2 Surname2', 'js25222225+1@gmail.com', '$2b$10$XuI3JTd6fEmwDVRvJer7eOxR.XfkI4lXb9par8eGulq2CX9u9xKnq', '081256789091', 'Man', '10 Agustus 2000', 'images\\default.png', 1, 2, '2021-05-09 15:32:25', '2021-05-10 03:43:18');
+(21, 'Name2 Surname2', 'js25222225+2@gmail.com', '$2b$10$XuI3JTd6fEmwDVRvJer7eOxR.XfkI4lXb9par8eGulq2CX9u9xKnq', '081256789091', 'Man', '10 Agustus 2000', 'images\\default.png', 1, 2, '2021-05-09 15:32:25', '2021-05-10 03:43:18');
 
 -- --------------------------------------------------------
 

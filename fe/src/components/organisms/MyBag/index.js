@@ -67,8 +67,8 @@ function MyBag() {
       .then((res) => {
         Swal.fire({
           icon: "success",
-          title: "Berhasil",
-          text: "Keranjang berhasil diubah",
+          title: "Succeed",
+          text: "Cart changed successfully",
           confirmButtonColor: "#273ac7",
         }).then(() => {
           axiosApiInstance
@@ -112,13 +112,13 @@ function MyBag() {
 
   const deleteCart = () => {
     Swal.fire({
-      title: "Apakah kamu yakin?",
-      text: "Kamu tidak akan dapat mengembalikan ini!",
+      title: "Are you sure?",
+      text: "You won't be able to return this!",
       icon: "question",
       showCancelButton: true,
-      confirmButtonText: "Ya, hapus!",
+      confirmButtonText: "Yes, delete!",
       confirmButtonColor: "#db3022",
-      cancelButtonText: "Tidak, batalkan!",
+      cancelButtonText: "No, cancel!",
       cancelButtonColor: "#1EC15F",
       reverseButtons: true,
     }).then((result) => {
@@ -142,8 +142,8 @@ function MyBag() {
             .then((res) => {
               Swal.fire({
                 icon: "success",
-                title: "Berhasil",
-                text: "Produk berhasil dihapus dari keranjang",
+                title: "Succeed",
+                text: "Product successfully removed from cart",
                 confirmButtonColor: "#273ac7",
               }).then(() => {
                 setCount(0);
@@ -187,8 +187,8 @@ function MyBag() {
         }
       } else {
         Swal.fire({
-          title: "Dibatalkan!",
-          text: "Keranjang kamu aman :)",
+          title: "Canceled!",
+          text: "Your basket is safe :)",
           icon: "info",
           confirmButtonColor: "#273ac7",
         });

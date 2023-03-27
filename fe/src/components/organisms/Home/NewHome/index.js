@@ -60,19 +60,22 @@ function NewHome() {
   // USE EFFECT
   useEffect(() => {
     axiosGet();
+    // eslint-disable-next-line
   }, []);
   useEffect(() => {
     pgNum();
+    // eslint-disable-next-line
   }, [rating]);
   useEffect(() => {
     axiosGet();
+    // eslint-disable-next-line
   }, [currentPage]);
 
   return (
     <div className={style.newHomeOuterBackgroundParentDIV}>
-      <div className="container">
-        <p className={style["title"]}>New</p>
-        <p className={style["teks"]}>You’ve never seen it before!</p>
+      <div key="container" className="container">
+        <p key="title" className={style["title"]}>New</p>
+        <p key="text" className={style["teks"]}>You’ve never seen it before!</p>
         <div className="row">
           {getNewProduct !== undefined
             ? getNewProduct.map((item, index) => {
@@ -93,14 +96,15 @@ function NewHome() {
                         alt=""
                       />
                       <div className="card-body">
-                        <p className={style["product-name"]}>{item.title}</p>
-                        <p className={style["price"]}>{Rupiah(item.price)}</p>
-                        <p className={style["teks-store"]}>{item.brand}</p>
+                        <p key="title" className={style["product-name"]}>{item.title}</p>
+                        <p key="price" className={style["price"]}>{Rupiah(item.price)}</p>
+                        <p key="brand" className={style["teks-store"]}>{item.brand}</p>
                         {[...Array(5)].map((star, i) => {
                           const ratingValue = i + 1;
                           return (
                             <>
                               <FaStar
+                                key={i}
                                 className={style["star"]}
                                 size={25}
                                 color={
@@ -120,7 +124,7 @@ function NewHome() {
             : Swal.fire({
                 icon: "error",
                 title: "Error!",
-                text: "Terjadi kesalahan!",
+                text: "There is an error!",
                 confirmButtonColor: "#273ac7",
               })}
         </div>

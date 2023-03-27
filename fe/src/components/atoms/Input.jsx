@@ -1,5 +1,3 @@
-import css from "./atoms.module.css";
-
 export default function Input({ cls, nm, onCg, plcHldr, type, val }) {
    return(
       <div className={cls}>

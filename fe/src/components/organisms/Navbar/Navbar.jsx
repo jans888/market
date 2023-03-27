@@ -42,8 +42,8 @@ export default function Navbar({ func, au }) {
   const logout = () => {
     Swal.fire({
       icon: "success",
-      title: "Berhasil",
-      text: "Berhasil keluar",
+      title: "Succeed",
+      text: "Made it out",
       confirmButtonColor: "#273ac7",
     }).then(() => {
       localStorage.clear();

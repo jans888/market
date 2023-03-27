@@ -65,8 +65,8 @@ export default function Filter({ func }) {
     } else {
       Swal.fire({
         icon: "success",
-        title: "Berhasil",
-        text: "Berhasil menambahkan filter pencarian yang dipilih!",
+        title: "Succeed",
+        text: "Successfully added the selected search filter!",
         confirmButtonColor: "#273ac7",
       }).then(() => {
         localStorage.removeItem("color");
