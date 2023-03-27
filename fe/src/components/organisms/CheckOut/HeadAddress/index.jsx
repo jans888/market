@@ -155,8 +155,8 @@ export default function HeadAddress({ funcAddress }) {
           })
         ) : (
           <>
-            <h4>Alamat belum ditambahkan</h4>
-            <p>Alamat akan tampil disini</p>
+            <h4>Address not added</h4>
+            <p>The address will appear here</p>
           </>
         )}
         {address.length > 0 ? (

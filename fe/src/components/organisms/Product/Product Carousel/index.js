@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
-
 import "./ProductCarousel.css";
 import { FaMinusCircle, FaPlusCircle } from "react-icons/fa";
 import Button from "../../../atoms/Button";
@@ -39,7 +38,7 @@ function Index({ product }) {
         Swal.fire({
           icon: "info",
           title: "Info!",
-          text: "Hanya satu gambar untuk produk ini",
+          text: "Only one image for this product",
           confirmButtonColor: "#273ac7",
         });
       });
@@ -135,21 +134,21 @@ function Index({ product }) {
       Swal.fire({
         icon: "error",
         title: "Oops...",
-        text: `Pilih warna produk`,
+        text: `Select a product color`,
         confirmButtonColor: "#273ac7",
       });
     } else if (count > product.stock) {
       Swal.fire({
         icon: "error",
         title: "Oops...",
-        text: `Stok produk ${product.stock}`,
+        text: `Product stock ${product.stock}`,
         confirmButtonColor: "#273ac7",
       });
     } else if (arrSizes.includes(String(size)) === false) {
       Swal.fire({
         icon: "error",
         title: "Oops...",
-        text: `Ukuran produk ${arrSizes.join(" ")}`,
+        text: `Product size ${arrSizes.join(" ")}`,
         confirmButtonColor: "#273ac7",
       });
     } else {
@@ -203,21 +202,21 @@ function Index({ product }) {
       Swal.fire({
         icon: "error",
         title: "Oops...",
-        text: `Pilih warna barang`,
+        text: `Choose the color of the item`,
         confirmButtonColor: "#273ac7",
       });
     } else if (count > product.stock) {
       Swal.fire({
         icon: "error",
         title: "Oops...",
-        text: `Stok barang ${product.stock}`,
+        text: `Stock of goods ${product.stock}`,
         confirmButtonColor: "#273ac7",
       });
     } else if (arrSizes.includes(String(size)) === false) {
       Swal.fire({
         icon: "error",
         title: "Oops...",
-        text: `Ukuran barang ${arrSizes.join(" ")}`,
+        text: `Item size ${arrSizes.join(" ")}`,
         confirmButtonColor: "#273ac7",
       });
     } else {

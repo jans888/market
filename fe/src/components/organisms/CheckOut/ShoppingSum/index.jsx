@@ -54,7 +54,7 @@ export default function ShoppingSum({ total, address, cart }) {
             Swal.fire({
               icon: "info",
               title: "Info!",
-              text: "Mengarahkan ke halaman home",
+              text: "Navigate to the home page",
               confirmButtonColor: "#273ac7",
             }).then(() => {
               history.push("/");
@@ -100,9 +100,7 @@ export default function ShoppingSum({ total, address, cart }) {
       <div
         className="modal fade"
         id="paymentModal"
-        aria-labelledby="paymentModalLabel"
-        aria-hidden="true"
-      >
+        aria-labelledby="paymentModalLabel" >
         <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content">
             <div className="paymentModalBody">
